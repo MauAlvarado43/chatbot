@@ -1,0 +1,89 @@
+.message-box {
+    height: 22rem !important;
+    width: 100% !important;
+    overflow-y: auto;
+    display: inline-block;
+    vertical-align: bottom;
+    border: #b085ff solid 1px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-bottom: 1.5%;
+}
+
+.message-container {
+    width: 100%;
+    display: inline-block;
+}
+
+.message {
+    max-width: 50% !important;
+    border-radius: 0.25rem;
+    color: #ffffff;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
+    word-wrap: break-word;
+    height: auto;
+    animation: bounceIn 0.5s;
+    display: block;
+}
+
+.bot-message {
+    background-color: #b085ff;
+    float: left;
+    margin-left: 2%;
+}
+
+.user-message {
+    background-color: #85a6ff;
+    float: right;
+    margin-right: 2%;
+}
+
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.3);
+        opacity: 0;
+    }
+
+    60% {
+        transform: scale(1.05);
+    }
+
+    80% {
+        transform: scale(0.9);
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.lds-dual-ring {
+    display: inline-block;
+    width: 0px;
+    height: 20px;
+}
+
+.lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin: 8px;
+    border-radius: 50%;
+    margin-left:  -20px;
+    border: 6px solid #fff;
+    border-color: #fff transparent #fff transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+}
+
+@keyframes lds-dual-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

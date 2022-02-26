@@ -1,10 +1,11 @@
 import sqlite3
+import json
 
 
 class DB:
 
     def __init__(self):
-        connection = sqlite3.connect('bot.db')
+        connection = sqlite3.connect('bot.db', check_same_thread=False)
         self.connection = connection
         self.init_database()
         self.init_data()
@@ -21,35 +22,26 @@ class DB:
             CREATE TABLE IF NOT EXISTS keywords (
                 word text,
                 weight real,
-                answer_id number
+                answer_id number,
+                FOREIGN KEY(answer_id) REFERENCES botanswer(answer_id)
             )
         """)
 
     def init_data(self):
 
-        fixtures = [
-            {
-                "answer": "Lo siento, no he podido entender lo que me dijiste",
-                "keywords": [],
-                "weights": []
-            },
-            {
-                "answer": "Hola",
-                "keywords": ["hola", "que", "tal", "onda"],
-                "weights": [2, 0.2, 0.6, 0.6]
-            }
-        ]
+        with open('./fixtures.json', 'r', encoding='utf-8') as fixtures_file:
+            fixtures = json.load(fixtures_file)
 
-        cursor = self.connection.cursor()
+            cursor = self.connection.cursor()
 
-        cursor.execute("DELETE FROM botanswer")
-        cursor.execute("DELETE FROM keywords")
+            cursor.execute("DELETE FROM botanswer")
+            cursor.execute("DELETE FROM keywords")
 
-        for index, data in enumerate(fixtures):
-            cursor.execute(f"INSERT INTO botanswer (answer, answer_id) VALUES ('{data['answer']}', {index})")
-            if len(data['keywords']) != 0:
-                for index2, _ in enumerate(data['keywords']):
-                    cursor.execute(f"INSERT INTO keywords (word, weight, answer_id) VALUES ('{data['keywords'][index2]}',{data['weights'][index2]}, {index})")
+            for index, data in enumerate(fixtures):
+                cursor.execute(f"INSERT INTO botanswer (answer, answer_id) VALUES ('{data['answer']}', {index})")
+                if len(data['keywords']) != 0:
+                    for index2, _ in enumerate(data['keywords']):
+                        cursor.execute(f"INSERT INTO keywords (word, weight, answer_id) VALUES ('{data['keywords'][index2]}',{data['weights'][index2]}, {index})")
 
     def query(self, text):
         cursor = self.connection.cursor()

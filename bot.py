@@ -1,12 +1,11 @@
-from database import DB
 from thefuzz import fuzz
 import re
 
 
 class Bot:
 
-    def __init__(self):
-        self.db = DB()
+    def __init__(self, db):
+        self.db = db
 
     def format_word(self, w):
         replacements = [["á", "a"], ["é", "e"], ["í", "i"], ["ó", "o"], ["ú", "u"]]

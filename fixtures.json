@@ -1,0 +1,117 @@
+[
+  {
+    "answer": "Lo siento, no he podido entender lo que me dijiste",
+    "keywords": [],
+    "weights": []
+  },
+  {
+    "answer": "Hola",
+    "keywords": ["hola", "que", "tal", "onda"],
+    "weights": [2, 0.2, 0.6, 0.6]
+  },
+  {
+    "answer": "¿Bien y tú?",
+    "keywords": ["como", "estas", "que", "tal", "va", "todo"],
+    "weights": [1, 1, 0.3, 0.3, 0.3, 0.2, 0.2]
+  },
+  {
+    "answer": "¿En qué te puedo ayudar?",
+    "keywords": ["me", "puedes", "ayudar", "necesito", "dime"],
+    "weights": [0.3, 0.4, 1, 1, 1, 0.4]
+  },
+  {
+    "answer": "Los cereales aportan energía debido a la gran cantidad de hidratos de carbono, sobre todo en forma de almidón. También son ricos en proteínas, vitaminas del grupo B (tiamina, riboflavina y niacina fundamentalmente), y fibra",
+    "keywords": ["dieta", "propiedades", "bueno", "malo", "comer", "cereal"],
+    "weights": [0.6, 0.5, 0.3, 0.3, 0.3, 2]
+  },
+  {
+    "answer": "Te recomiendo consumir yogurth, fruta, sándwich de mantequilla de mani, leche chocolatada con bajo contenido de grasas, pretzele o batido de frutas",
+    "keywords": ["recomiendas", "comida", "comer", "entrenamiento", "ejercicio"],
+    "weights": [0.3, 0.3, 0.3, 2, 2]
+  },
+  {
+    "answer": "Puedes consumir cualquier alimento a base de plantas. Algunos de ellos son vegetales, frutas, granos integrales, legumbres, semillas, nueces entre otros",
+    "keywords": ["que", "comer", "vegana", "vegano", "comida"],
+    "weights": [0.3, 0.3, 2, 1, 0.3]
+  },
+  {
+    "answer": "Para bajar de peso te puedo recomendar consumir alimentos como el huevo, verduras de hoja verde, salmón, verduras crucíferas, pollo, ternera magra, patata hervida, legumbres, yogurt, fruta, algunos cereales, etc. Para una mejor dieta, consulta a un nutriólogo",
+    "keywords": ["bajar", "peso"],
+    "weights": [1, 0.8]
+  },
+  {
+    "answer": "Para subir de peso te puedo recomendar consumir alimentos como leche, batidos de proteínas, arroz, carnes rojas, nueces, pan integral, almidones, pastas, etc. Para una mejor dieta, consulta a un nutriólogo",
+    "keywords": ["subir", "peso"],
+    "weights": [1, 0.8]
+  },
+  {
+    "answer": "Te recomiendo preparar recetas de omelette ligeras, budín de chía, hot cakes de avena, tostadas francesas, bizcocho de calabaza, tostadas de pan de espelta con mermelada de higos",
+    "keywords": ["desayuno", "saludabe", "debo", "comer", "recomiendas", "merienda", "comida"],
+    "weights": [1, 1, 0.3, 0.3, 0.3, 0.6, 0.3]
+  },
+  {
+    "answer": "Para ganar masa muscular te recomiendo consumir alimentos como carne magra, pollo, queso, huevos, espinacas, proteína de suero, avena,granos enteros, frutas y verduras, grasas saludables,etc. Para una mejor dieta, consulta a un nutriólogo",
+    "keywords": ["ganar", "masa"],
+    "weights": [1, 1]
+  },
+  {
+    "answer": "Para perder masa muscular te recomiendo consumir alimentos como frutas, verduras, cereales integrales, lácteos bajos en grasa, pescados, aves, frijoles, nueces, carnes rojas magras,etc. Para una mejor dieta, consulta a un nutriólogo",
+    "keywords": ["perder", "masa"],
+    "weights": [1, 1]
+  },
+  {
+    "answer": "Las 10 frutas más sanas del mundo son la manzana, aguacate, plátano, cítricos, uvas, piña, fresas, sandía, kiwi, etc. Puedes comer cualquiera de ellas y te aportarán muchos beneficios",
+    "keywords": ["recomiendas", "fruta", "comer", "desayunar", "sanas", "ingerir"],
+    "weights": [0.3, 1, 0.4, 0.3, 0.3, 0.6]
+  },
+  {
+    "answer": "Algunas de las verduras que deberías consumir son espinaca, brócoli, guisantes, remolacha, zanahorías y tomates",
+    "keywords": ["verdura", "debería", "comer", "ingerir"],
+    "weights": [1, 0.3, 0.3, 0.3]
+  },
+  {
+    "answer": "Los grupos de alimento que se encuentran dentro de lo que denominaríamos plato saludable son los aceites, verduras, frutas, proteínas, cereales y agua. Cualquier platillo que cocines que contengan una porción adecuada de estos alimentos será saludable",
+    "keywords": ["cocinar", "plato", "buen", "comer", "recomiendas"],
+    "weights": [1, 0.3, 0.4, 0.5, 0.2]
+  },
+  {
+    "answer": "Existe una gran cantidad de platillos bajos en grasa que puedes disfrutar, por ejemplo: Pechugas rellenas de espinaca, salmón en salsa cremosa de champiñones, jicatacos de camarón, aguacate relleno de ceviche con habanero, etc.",
+    "keywords": ["grasas", "bajo", "comida"],
+    "weights": [1, 0.4, 0.3]
+  },
+  {
+    "answer": "Algunos alimentos con altas cantidades de grasa son la mantequilla, queso, leche entera, helado, la crema y las carnes grasosas. Procura consumir estos alimentados de manera moderada",
+    "keywords": ["altos", "grasas", "comida"],
+    "weights": [0.4, 1, 0.3]
+  },
+  {
+    "answer": "Algunos platillos saludables para el almuerzo son: Lomito de res con champiñones y cebolla picaditos, pechuga de pollo guisada con verduras, pasta con salsa a base de pechuga molida con verduras, pescado a la plancha con vegetales al horno o salteados y lomo de cerdo al horno con especias y mermelada de manzana sin azúcar, acompañado de vegetales horneados",
+    "keywords": ["almuerzo", "comer", "saludable"],
+    "weights": [1, 0.3, 0.4]
+  },
+  {
+    "answer": "Algunas cenas saludables que te puedo recomendar son: Tomate rellenos de lentejas, ensalada de espárragos, salmón con verduras, arroz integral con verduras, huevo con patatas y pimentón, crema de zanahoria, alcachofas con quinua",
+    "keywords": ["cena", "comer", "saludable"],
+    "weights": [1, 0.3, 0.4]
+  },
+  {
+    "answer": "Los vegetales usualmente contenidos en las ensaladas son una excelente fuente de vitaminas que regulan los procesos orgánicos, como el buen funcionamiento del sistema nervioso. Puedes preparar algunas de ellas con vegetales, y alimentos de origen animal como queso y pollo. Te recomiendo buscar recetas en el recetario de cocina fácil",
+    "keywords": ["ensalada", "recomiendame", "saludable", "bueno"],
+    "weights": [1, 0.3, 0.4, 0.3]
+  },
+  {
+    "answer": "Es muy recomendable consumir seis nutrientes importantes: vitaminas A, C, D y E; calcio y magnesio para mantener una dieta saludable, te recomiendo además que visites un nutriólogo para que te proporcione la dieta ideal que se ajuste a tus necesidades y condiciones",
+    "keywords": ["dieta", "recomiéndame"],
+    "weights": [1, 0.3]
+  },
+  {
+    "answer": "Las carnes magras son las más saludables porque son ricas en proteínas de alta calidad y bajas en grasas. En una alimentación equilibrada no debemos descuidar el consumo de proteínas, un macronutriente esencial, sin el cual el cuerpo no funciona correctamente",
+    "keywords": ["carne", "ingerir", "recomiendame", "mejor"],
+    "weights": [1, 0.3, 0.3, 0.5]
+  },
+  {
+    "answer": "Por nada, estoy para servirte",
+    "keywords": ["gracias", "agradezco"],
+    "weights": [1, 1]
+  }
+]
