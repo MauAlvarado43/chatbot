@@ -15,7 +15,7 @@ class Bot:
         return w
 
     def get_words_simliarity(self, w1, w2):
-        return fuzz.token_sort_ratio(w1.lower(), w2.lower())
+        return fuzz.ratio(self.format_word(w1.lower()), self.format_word(w2.lower())) / 100
 
     def get_probability(self, answer_id, request):
 
@@ -30,14 +30,13 @@ class Bot:
             for word in request.split(" "):
                 best_ponderation_word = max(self.get_words_simliarity(word, keyword[2]), best_ponderation_word)
 
-            self_ponderation += best_ponderation_word
+            self_ponderation += best_ponderation_word * keyword[1]
             max_ponderation += keyword[1]
 
         if max_ponderation == 0:
             return 0
 
-        return (self_ponderation / max_ponderation) / 100
-
+        return self_ponderation / max_ponderation
 
     def get_response(self, request):
 
@@ -59,7 +58,7 @@ class Bot:
                 best_probability = probability
                 best_answer = answer[1]
 
-        if best_probability < 0.25:
+        if best_probability < 0.3:
             return no_answer
 
         return best_answer

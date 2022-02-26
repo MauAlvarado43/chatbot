@@ -35,8 +35,8 @@ class DB:
             },
             {
                 "answer": "Hola",
-                "keywords": ["Hola", "que", "tal", "onda"],
-                "weights": [1, 1, 1, 1]
+                "keywords": ["hola", "que", "tal", "onda"],
+                "weights": [2, 0.2, 0.6, 0.6]
             }
         ]
 
@@ -48,14 +48,13 @@ class DB:
         for index, data in enumerate(fixtures):
             cursor.execute(f"INSERT INTO botanswer (answer, answer_id) VALUES ('{data['answer']}', {index})")
             if len(data['keywords']) != 0:
-                for index2, _ in enumerate(fixtures):
+                for index2, _ in enumerate(data['keywords']):
                     cursor.execute(f"INSERT INTO keywords (word, weight, answer_id) VALUES ('{data['keywords'][index2]}',{data['weights'][index2]}, {index})")
 
     def query(self, text):
         cursor = self.connection.cursor()
         data = cursor.execute(text)
         return data
-
 
     def get_all_answers(self):
         return self.query("SELECT answer_id, answer FROM botanswer")
