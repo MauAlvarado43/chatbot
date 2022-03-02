@@ -110,6 +110,61 @@
     "weights": [1, 0.3, 0.3, 0.5]
   },
   {
+    "answer": "Se denomina legumbre a la semilla contenida en las plantas de la familia de las leguminosas, tienen un alto contenido de fibra, lo que es fundamental para una óptima digestión. Además, reducen el colesterol, y promueve el control de la glucosa",
+    "keywords": ["legumbre"],
+    "weights": [1]
+  },
+  {
+    "answer": "Es recomendable que los hombres tomen aproximadamente 3 litros de agua al día y a las mujeres 2 ",
+    "keywords": ["cuánta", "agua", "litro"],
+    "weights": [0.3, 1, 0.8]
+  },
+  {
+    "answer": "Los nutriólogos recomiendan hacer un total de 5 veces al día, teniendo un tiempo aproximado de 4 horas entre comida",
+    "keywords": ["comer", "al", "día", "veces"],
+    "weights": [0.4, 0.6, 1, 1]
+  },
+  {
+    "answer": "Verduras, frutas frescas, legumbres secas, cereales integrales, tubérculos , harinas, carnes blancas, carnes magras, embutidos saludables, pescado, huevos, lácteos, aceite de oliva y café son algunos alimentos que forman parte de una despensa saludable",
+    "keywords": ["despensa", "saludable"],
+    "weights": [1, 0.8]
+  },
+  {
+    "answer": "Se recomienda hacer al menos 30 min de ejercicio al día",
+    "keywords": ["ejercicio", "recomiendas", "debo"],
+    "weights": [1, 0.4, 0.4]
+  },
+  {
+    "answer": "Según las porciones recomendadas del plato del buen comer en relación a tu peso y edad",
+    "keywords": ["comida", "proporcion", "promedio"],
+    "weights": [0.3, 1, 0.3]
+  },
+  {
+    "answer": "Dependiendo de tus actividades diarias, pero con una comida balanceada, se recomienda una dieta mínima de 1500 calorías",
+    "keywords": ["calorias", "consumir", "puedo"],
+    "weights": [1, 0.8, 0.3]
+  },
+  {
+    "answer": "Es el consumir menos calorías de las que quemas al día, así se consumirá la grasa del cuerpo y se usara para bajar de peso paulatinamente",
+    "keywords": ["deficit", "calorico", "consumir"],
+    "weights": [1, 1, 0.3]
+  },
+  {
+    "answer": "Todos los alimentos son buenos, ya que todos tienes nutrientes esenciales para el cuerpo humano, solo se deben seguir las porciones recomendadas",
+    "keywords": ["alimentos", "buenos", "malos"],
+    "weights": [1, 0.8, 0.8]
+  },
+  {
+    "answer": "Los alimentos procesados, fritos o empanizados",
+    "keywords": ["alimentos", "procesados", "no", "comer"],
+    "weights": [0.8, 1, 0.6, 0.6]
+  },
+  {
+    "answer": "Los horarios son un tema recurrente en los mitos de la fruta. Un mito más que se desmonta igual que el de cenar fruta o si hay que comer la fruta antes o después de la comida. El momento del día o el orden de los alimentos no tienen ninguna influencia en los efectos beneficiosos de comer fruta",
+    "keywords": ["fruta", "noche", "horario"],
+    "weights": [0.8, 0.8, 1]
+  },
+  {
     "answer": "Por nada, estoy para servirte",
     "keywords": ["gracias", "agradezco"],
     "weights": [1, 1]
