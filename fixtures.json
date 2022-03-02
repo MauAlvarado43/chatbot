@@ -5,6 +5,11 @@
     "weights": []
   },
   {
+    "answer": "Por favor, escribe una pregunta que pueda entender",
+    "keywords": ["aaa", "asd"],
+    "weights": [1, 1]
+  },
+  {
     "answer": "Hola",
     "keywords": ["hola", "que", "tal", "onda"],
     "weights": [2, 0.2, 0.6, 0.6]

@@ -57,7 +57,9 @@ class Bot:
                 best_probability = probability
                 best_answer = answer[1]
 
-        if best_probability < 0.3:
+        print(best_probability)
+
+        if best_probability < 0.2:
             return no_answer
 
         return best_answer
